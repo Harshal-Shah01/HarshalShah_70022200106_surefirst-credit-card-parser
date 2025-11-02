@@ -73,13 +73,13 @@ All sample PDFs are in the `credit_card_pdfs/` folder. You can upload your own P
 ![AXIS Output](Pictures/IDFC.png)
 
 # YES-BANK 
-![AXIS Output](Pictures/YES-BANK_sample.png)
+![AXIS Output](Pictures/YES-BANK.png)
 
 # AXIS-Normal
-![AXIS Output](Pictures/AXIS-Image.png)
+![AXIS Output](Pictures/AXIS-Normal.png)
 
 # AXIS-Image
-![AXIS Output](Pictures/AXIS-Normal.png)
+![AXIS Output](Pictures/AXIS-Image.png)
 
 ## Project Structure
 ```
