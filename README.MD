@@ -64,7 +64,7 @@ All sample PDFs are in the `credit_card_pdfs/` folder. You can upload your own P
 
 ## Screenshots
 
-*Placeholder: Add screenshots of the Streamlit app here.*
+
 
 ## Project Structure
 ```
