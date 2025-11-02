@@ -17,60 +17,56 @@ Parse and extract details from credit card PDF statements (HDFC, ICICI, Axis, YE
 
 ## Setup
 
-1. Clone the repo:
+1.  Clone the repo:
+    ```bash
+    git clone <repo_url>
+    cd credit-card-parser
+    ```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Ensure Tesseract is installed:
+    * **Windows:** `C:\Program Files\Tesseract-OCR\tesseract.exe`
+    * **Linux/Mac:** Install via package manager and update `pytesseract.pytesseract.tesseract_cmd` in `all_bank_parser.py` if needed
 
-```bash
-git clone <repo_url>
-cd credit-card-parser
-Install dependencies:
+*Tested on Python 3.12.3 and Windows 11*
 
-bash
-Copy code
-pip install -r requirements.txt
-Ensure Tesseract is installed:
+## Usage
 
-Windows: C:\Program Files\Tesseract-OCR\tesseract.exe
+### Streamlit Web App
 
-Linux/Mac: Install via package manager and update pytesseract.pytesseract.tesseract_cmd in all_bank_parser.py if needed
+1.  Run the app:
+    ```bash
+    streamlit run app.py
+    ```
+2.  Select a credit card provider from the dropdown or upload your own PDF.
+3.  Click "Parse Statement".
+4.  View summary and download extracted data as JSON.
 
-Tested on Python 3.12.3 and Windows 11
+### CLI Parser
 
-Usage
-Streamlit Web App
-Run the app:
+1.  ```bash
+    python main.py
+    ```
+2.  Enter the PDF filename (from `credit_card_pdfs/` folder or your own PDF)
+3.  Extracted data will be printed in JSON format.
 
-bash
-Copy code
-streamlit run app.py
-Select a credit card provider from the dropdown or upload your own PDF.
+## Sample PDFs
 
-Click Parse Statement.
+All sample PDFs are in the `credit_card_pdfs/` folder. You can upload your own PDF in the app.
 
-View summary and download extracted data as JSON.
+* HDFC
+* ICICI
+* Axis (Normal & Image)
+* YES Bank
+* IDFC
 
-CLI Parser
-bash
-Copy code
-python main.py
-Enter the PDF filename (from credit_card_pdfs/ folder or your own PDF)
+## Screenshots
 
-Extracted data will be printed in JSON format.
+*Placeholder: Add screenshots of the Streamlit app here.*
 
-Sample PDFs
-All sample PDFs are in the credit_card_pdfs/ folder. You can upload your own PDF in the app.
-
-HDFC
-ICICI
-Axis (Normal & Image)
-YES Bank
-IDFC
-
-Screenshots
-Placeholder: Add screenshots of the Streamlit app here.
-
-Project Structure
-css
-Copy code
+## Project Structure
 credit-card-parser/
 ├── parser/
 │   └── all_bank_parser.py
@@ -83,7 +79,8 @@ credit-card-parser/
 ├── requirements.txt
 └── README.md
 
-Notes
-OCR fallback is automatically triggered if the PDF contains no selectable text.
-JSON download is available for all parsed statements.
-All sample PDFs were collected from publicly available sources for testing.
+## Notes
+
+* OCR fallback is automatically triggered if the PDF contains no selectable text.
+* JSON download is available for all parsed statements.
+* All sample PDFs were collected from publicly available sources for testing.
