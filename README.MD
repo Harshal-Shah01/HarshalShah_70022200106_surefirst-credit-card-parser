@@ -40,7 +40,7 @@ Parse and extract details from credit card PDF statements (HDFC, ICICI, Axis, YE
     ```bash
     streamlit run app.py
     ```
-2.  Select a credit card provider from the dropdown or upload your own PDF.
+2.  Select a credit card provider from the dropdown or upload the PDF.
 3.  Click "Parse Statement".
 4.  View summary and download extracted data as JSON.
 
@@ -49,8 +49,8 @@ Parse and extract details from credit card PDF statements (HDFC, ICICI, Axis, YE
 1.  ```bash
     python main.py
     ```
-2.  Enter the PDF filename (from `credit_card_pdfs/` folder or your own PDF)
-3.  Extracted data will be printed in JSON format.
+2.  Enter the PDF filename (from `credit_card_pdfs/` folder)
+3.  Extracted data will be printed.
 
 ## Sample PDFs
 
