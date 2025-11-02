@@ -90,6 +90,10 @@ credit-card-parser/
 │   ├── hdfc.pdf
 │   ├── icici.pdf
 │   └── ...
+├── Pictures/
+│   ├── hdfc.png
+│   ├── icici.png
+│   └── ...
 ├── app.py
 ├── main.py
 ├── requirements.txt
