@@ -60,22 +60,16 @@ Sample PDFs
 All sample PDFs are in the credit_card_pdfs/ folder. You can upload your own PDF in the app.
 
 HDFC
-
 ICICI
-
 Axis (Normal & Image)
-
 YES Bank
-
 IDFC
 
 Screenshots
-Placeholder: Add screenshots of the Streamlit app here. Example:
-
-
+Placeholder: Add screenshots of the Streamlit app here.
 
 Project Structure
-text
+css
 Copy code
 credit-card-parser/
 ├── parser/
@@ -88,9 +82,8 @@ credit-card-parser/
 ├── main.py
 ├── requirements.txt
 └── README.md
+
 Notes
 OCR fallback is automatically triggered if the PDF contains no selectable text.
-
 JSON download is available for all parsed statements.
-
 All sample PDFs were collected from publicly available sources for testing.
