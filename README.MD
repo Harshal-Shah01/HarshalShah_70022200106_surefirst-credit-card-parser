@@ -67,7 +67,6 @@ All sample PDFs are in the `credit_card_pdfs/` folder. You can upload your own P
 *Placeholder: Add screenshots of the Streamlit app here.*
 
 ## Project Structure
-Project Structure
 credit-card-parser/
 ├── parser/
 │   └── all_bank_parser.py
@@ -79,8 +78,6 @@ credit-card-parser/
 ├── main.py
 ├── requirements.txt
 └── README.md
-
-Notes
 
 ## Notes
 
