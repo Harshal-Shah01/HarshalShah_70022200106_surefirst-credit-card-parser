@@ -8,8 +8,6 @@ st.markdown(
     "Select a credit card provider or upload your own PDF statement to extract data."
 )
 
-# --- Predefined bank PDFs ---
-# --- Predefined bank PDFs ---
 bank_samples = {
     "HDFC": "credit_card_pdfs/hdfc.pdf",
     "ICICI": "credit_card_pdfs/icici.pdf",
@@ -19,14 +17,10 @@ bank_samples = {
     "YES Bank": "credit_card_pdfs/yes-bank.pdf"
 }
 
-
-# --- Sidebar: Bank selection ---
 selected_bank = st.selectbox("Select a credit card provider", list(bank_samples.keys()))
 
-# --- Optionally upload new PDF ---
 uploaded_file = st.file_uploader("Or upload your own PDF", type="pdf")
 
-# Determine which PDF to parse
 if uploaded_file:
     pdf_path = uploaded_file
     pdf_name = uploaded_file.name
@@ -41,13 +35,11 @@ if st.button("Parse Statement"):
 
     st.success("✅ Parsing Complete!")
 
-    # --- Show summary ---
     st.subheader("Summary")
     for key, value in data.items():
         if key != "Transactions":
             st.write(f"**{key}:** {value}")
 
-    # --- Download JSON ---
     st.download_button(
         label="Download Extracted Data as JSON",
         data=json.dumps(data, indent=4, ensure_ascii=False),
