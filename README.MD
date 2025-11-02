@@ -95,9 +95,3 @@ credit-card-parser/
 ├── requirements.txt
 └── README.md
 ```
-
-## Notes
-
-* OCR fallback is automatically triggered if the PDF contains no selectable text.
-* JSON download is available for all parsed statements.
-* All sample PDFs were collected from publicly available sources for testing.
