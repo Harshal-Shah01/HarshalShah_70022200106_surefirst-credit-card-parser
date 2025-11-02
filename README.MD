@@ -19,7 +19,7 @@ Parse and extract details from credit card PDF statements (HDFC, ICICI, Axis, YE
 
 1.  Clone the repo:
     ```bash
-    git clone <repo_url>
+    git clone <HarshalShah_70022200106_surefirst-credit-card-parser>
     cd credit-card-parser
     ```
 2.  Install dependencies:
