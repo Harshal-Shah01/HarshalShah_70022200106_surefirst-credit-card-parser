@@ -62,25 +62,6 @@ All sample PDFs are in the `credit_card_pdfs/` folder. You can upload your own P
 * YES Bank
 * IDFC
 
-## Screenshots
-# HDFC 
-![HDFC Output](Pictures/HDFC.png)
-
-# ICICI
-![ICICI Output](Pictures/ICICI.png)
-
-# IDFC
-![AXIS Output](Pictures/IDFC.png)
-
-# YES-BANK 
-![AXIS Output](Pictures/YES-BANK.png)
-
-# AXIS-Normal
-![AXIS Output](Pictures/AXIS-Normal.png)
-
-# AXIS-Image
-![AXIS Output](Pictures/AXIS-Image.png)
-
 ## Project Structure
 ```
 credit-card-parser/
@@ -99,3 +80,22 @@ credit-card-parser/
 ├── requirements.txt
 └── README.md
 ```
+
+## Screenshots
+# HDFC 
+![HDFC Output](Pictures/HDFC.png)
+
+# ICICI
+![ICICI Output](Pictures/ICICI.png)
+
+# IDFC
+![AXIS Output](Pictures/IDFC.png)
+
+# YES-BANK 
+![AXIS Output](Pictures/YES-BANK.png)
+
+# AXIS-Normal
+![AXIS Output](Pictures/AXIS-Normal.png)
+
+# AXIS-Image
+![AXIS Output](Pictures/AXIS-Image.png)
